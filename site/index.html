@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="color-scheme" content="dark" />
+  <title>no need to go further</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="entry" class="entry" aria-label="Enter the film">
+      <div class="entry__noise" aria-hidden="true"></div>
+      <div class="entry__title" aria-hidden="true">
+        <span>no need</span>
+        <span>to go further</span>
+      </div>
+      <button id="enter" class="entry__enter" type="button">
+        <span>enter</span>
+      </button>
+      <p class="entry__note">headphones recommended</p>
+    </section>
+
+    <section id="experience" class="experience" hidden aria-label="Interactive film">
+      <div id="surface" class="surface">
+        <video id="film" class="film" playsinline preload="auto"></video>
+
+        <div id="synthetic" class="synthetic" aria-hidden="true">
+          <div class="synthetic__field"></div>
+          <div class="synthetic__architecture"></div>
+          <div class="synthetic__figure"></div>
+          <div class="synthetic__reflection"></div>
+          <div class="synthetic__light"></div>
+        </div>
+
+        <div id="choiceLayer" class="choice-layer" aria-label="Choose what happens"></div>
+        <div class="focus-field" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="grain" aria-hidden="true"></div>
+        <div class="scan" aria-hidden="true"></div>
+        <div id="transition" class="transition" aria-hidden="true"></div>
+      </div>
+
+      <div id="debug" class="debug" hidden></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>
